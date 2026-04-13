@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd tech-glow-signup && npm install && npm run build",
+  "outputDirectory": "tech-glow-signup/dist",
+  "installCommand": "echo 'skip root install'"
+}
