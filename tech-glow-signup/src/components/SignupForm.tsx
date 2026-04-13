@@ -32,6 +32,7 @@ const SignupForm = ({ t }: { t: Translations }) => {
         job_title: form.jobTitle.trim() || null,
         phone: form.phone.trim() || null,
         company: form.company.trim() || null,
+        language: t.lang,
       });
 
       if (error) {

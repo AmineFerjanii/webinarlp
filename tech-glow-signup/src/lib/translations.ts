@@ -1,6 +1,7 @@
 export type Lang = "fr" | "en";
 
 export interface Translations {
+  lang: Lang;
   tagLine: string;
   headline: string;
   headlineHighlight: string;
@@ -46,13 +47,14 @@ export interface Translations {
 
 export const translations = {
   fr: {
+    lang: "fr" as const,
     tagLine: "ÉVÉNEMENT EN DIRECT — 20 AVRIL 2026",
-    headline: "Comment exploiter la data pour multiplier vos performances",
+    headline: "Exploiter la data pour multiplier vos performances",
     headlineHighlight: "marketing et commerciales",
     subtitle:
       "Rejoignez des experts du secteur pour un webinaire de 60 minutes sur les stratégies data-driven qui transforment vos résultats marketing et commerciaux.",
     formTitle: "Réservez votre place",
-    formSubtitle: "Gratuit · 60 min · Q&R en direct",
+    formSubtitle: "Gratuit · 45 min · Q&R en direct",
     fullName: "Nom complet *",
     email: "Adresse e-mail *",
     jobTitle: "Poste",
@@ -89,11 +91,11 @@ export const translations = {
     speakerTag: "VOTRE INTERVENANT",
     speakerTitle: "Découvrez le",
     speakerHighlight: "conférencier",
-    speakerName: "Mohamed Bahri",
-    speakerRole: "Directeur Data & Performance",
+    speakerName: "Mohamed Majed Bahri",
+    speakerRole: "Data & AI Transformation Lead",
     speakerBio:
-      "Avec plus de 15 ans d'expérience à l'intersection de la data et du marketing, Jordan a accompagné des entreprises du CAC 40 dans leur transformation data-driven et développé des méthodologies adoptées par des milliers de professionnels.",
-    footerCopy: "© 2026 Votre Marque",
+      "Avec plus de 15 ans d'expérience à l'intersection de la data et du marketing, Mohamed a accompagné des entreprises du CAC 40 dans leur transformation data-driven et développé des méthodologies adoptées par des milliers de professionnels.",
+    footerCopy: "© 2026 EALAN GROUP",
     footerLinks: ["Politique de confidentialité", "Conditions d'utilisation", "Contact"],
     days: "Jours",
     hours: "Heures",
@@ -112,6 +114,7 @@ export const translations = {
     placeholderCompany: "Acme SAS",
   },
   en: {
+    lang: "en" as const,
     tagLine: "LIVE EVENT — APRIL 20, 2026",
     headline: "How to Leverage Data to Multiply Your",
     headlineHighlight: "Marketing & Sales Performance",
